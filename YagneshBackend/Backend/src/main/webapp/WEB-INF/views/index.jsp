@@ -1,4 +1,5 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <title>Mattress A Ecommerce Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
@@ -76,12 +77,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="head-top">
 				<div class="logo">
-					<h1><a href="index">Mattress</a></h1>
+					<h1><a href="<c:url value="index"/>">Mattress</a></h1>
 				</div>
 		  <div class=" h_menu4">
 				<ul class="memenu skyblue">
-					  <li><a class="color8" href="index.jsp">HOME</a></li>	
-				      <li><a class="color1" href="about.jsp">ABOUT US</a>
+					  <li><a class="color8" href="<c:url value="index"/>">HOME</a></li>	
+				      <li><a class="color1" href="<c:url value="about"/>">ABOUT US</a>
 				      	<div class="mepanel">
 						<div class="row">
 							<div class="col1">
@@ -137,7 +138,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  </div>
 						</div>
 					</li>
-				    <li class="grid"><a class="color2" href="#">SERVICES</a>
+				    <li class="grid"><a class="color2" href="<c:url value="products"/>">SERVICES</a>
 					  	<div class="mepanel">
 						<div class="row">
 							<div class="col1">
@@ -271,7 +272,7 @@ suits you</p>
 					<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="resources/images/t1.jpg" alt="">
 						<div class="b-wrapper">
 											<h3 class="b-animate b-from-top top-in   b-delay03 ">
-												<span>TRIBECA LIVING</span>	
+												<span>TRIBECA LIVING</span>
 											</h3>
 										</div>
 					</a>
@@ -329,7 +330,8 @@ suits you</p>
 						</a>
 				
 
-					<p><a href="single.html">TRIBECA LIVING</a></p>
+					<p><button type="button" class="btn btn-info">ADD TO CART</a></button><a href="<c:url value="/viewall"/>" class="btn btn-info btn-all">VIEWS</a></p>
+					
 					<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
 					</div>
 					<div class="col-md-3 grid-top simpleCart_shelfItem">

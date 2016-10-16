@@ -219,15 +219,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h3>Personal infomation</h3>
 					 <div>
 						<span>First Name</span>
-						<input type="text"> 
+						<input type="text" required> 
 					 </div>
 					 <div>
 						<span>Last Name</span>
-						<input type="text"> 
+						<input type="text" required> 
 					 </div>
 					 <div>
 						 <span>Email Address</span>
-						 <input type="text"> 
+						 <input type="text" required> 
 					 </div>
 					   <a class="news-letter" href="#">
 						 <label class="checkbox"><input type="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
@@ -237,11 +237,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						    <h3>Login information</h3>
 							 <div>
 								<span>Password</span>
-								<input type="password">
+								<input type="password" required>
 							 </div>
 							 <div>
 								<span>Confirm Password</span>
-								<input type="password">
+								<input type="password" required>
 							 </div>
 							 <input type="submit" value="submit">
 							

@@ -16,7 +16,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--fonts-->
 <link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script><!--//fonts-->
 <!-- start menu -->
 <link href="resources/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="resources/js/memenu.js"></script>
@@ -200,174 +201,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				
 			  </ul> 
 			</div>
-			<script>$(document).ready(function(){
-				$("#mytable #checkall").click(function () {
-			        if ($("#mytable #checkall").is(':checked')) {
-			            $("#mytable input[type=checkbox]").each(function () {
-			                $(this).prop("checked", true);
-			            });
-
-			        } else {
-			            $("#mytable input[type=checkbox]").each(function () {
-			                $(this).prop("checked", false);
-			            });
-			        }
-			    });
-			    
-			    
-			});
-</script>
+			
+           
+<br>
+<br>
+<br>
 <div class="container">
-	<div class="row">
-		
-        
-        <div class="col-md-12">
-        <h4>Bootstrap Snipp for Datatable</h4>
-        <div class="table-responsive">
 
-                
-              <table id="mytable" class="table table-bordred table-striped">
-                   
-                   <thead>
-                   
-                   <th><input type="checkbox" id="checkall" /></th>
-                   <th>Sr NO</th>
-                    <th>Name</th>
-                     <th>Brand</th>
-                     <th>Category</th>
-                     <th>Supplier</th>
-                      <th>Edit</th>
-                      
-                       <th>Delete</th>
-                   </thead>
-    <tbody>
-    
-    <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>101</td>
-    <td>Rahul</td>
-    <td>Reymonds</td>
-    <td>Category1</td>
-    <td>Firstshop</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>102</td>
-    <td>Deepak</td>
-    <td>Allensolly</td>
-    <td>Category2</td>
-    <td>Shopper1</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>103</td>
-    <td>Sonu</td>
-    <td>Vanhussien</td>
-    <td>Category3</td>
-    <td>FashionWorld</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
-    
- <tr>
-    <td><input type="checkbox" class="checkthis" /></td>
-    <td>104</td>
-    <td>Prakash</td>
-    <td>PeterEngland</td>
-    <td>Category4</td>
-    <td>Bazzar</td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-    </tr>
-    
-    
- 
-    
-   
-    
-   
-    
-    </tbody>
-        
-</table>
-
-<div class="clearfix"></div>
-<ul class="pagination pull-right">
-  <li class="disabled"><a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a></li>
-  <li class="active"><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
-</ul>
-                
-            </div>
-            
-        </div>
+	<div ng-app="myApp" ng-controller="namesCtrl">
+		<p>
+			 <input type="text" class="form-control " id="usr" ng-model="test">
+		</p>
+		<table class="table table-hover">
+    <thead>
+      <tr>
+       <th >SerialNo</th>
+				<th ng-click="orderByMe('name')">Name</th>
+				<th ng-click="orderByMe('country')">brand</th>
+				<th ng-click="orderByMe('country')">Categrory</th>
+			</tr>
+			<tr ng-repeat="x in names | orderBy:myOrderBy | filter:test">
+				<td>{{x.sno}}</td>
+				<td>{{x.name}}</td>
+				<td>{{x.brand}}</td>
+				<td>{{x.categrory}}</td>
+				
+				<td></td>
+				<td>
+				<div class="btn-group btn-group-lg">
+    <button type="button" class="btn btn-success" onClick="window.open('http://www.google.co.in/')">VIEW</button>
+    <button type="button" class="btn btn-info " >EDIT</button>
+    <button type="button" class="btn btn-danger">DELETE</button>
+     <button type="button" class="btn btn-warning">ADD CART</button>
+  </div>
+  </td>
+			</tr>
+			</thead>
+		</table>
 	</div>
-</div>
-
-
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-      <div class="modal-dialog">
-    <div class="modal-content">
-          <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
-      </div>
-          <div class="modal-body">
-          <div class="form-group">
-        <input class="form-control " type="text">
-        </div>
-        <div class="form-group">
-        
-        <input class="form-control " type="text" >
-        </div>
-        <div class="form-group">
-        <textarea rows="2" class="form-control"></textarea>
-    
-        
-        </div>
-      </div>
-          <div class="modal-footer ">
-        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
-      </div>
-        </div>
-    <!-- /.modal-content --> 
-  </div>
-      <!-- /.modal-dialog --> 
-    </div>
-    
-    
-    
-    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-      <div class="modal-dialog">
-    <div class="modal-content">
-          <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-        <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
-      </div>
-          <div class="modal-body">
-       
-       <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
-       
-      </div>
-        <div class="modal-footer ">
-        <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
-      </div>
-        </div>
-    <!-- /.modal-content --> 
-  </div>
+	</div>
+	<script src="resources/js/product.js"></script>
 </body>
 </html>
