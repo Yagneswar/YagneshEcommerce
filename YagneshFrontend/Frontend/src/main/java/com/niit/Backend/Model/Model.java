@@ -1,22 +1,20 @@
 package com.niit.Backend.Model;
 
 public class Model {
-	
+
 	private int SerialNo;
-	private String Name;
 	private String brand;
 	private String Category;
+	private String name;
 	public int getSerialNo() {
 		return SerialNo;
 	}
+	@Override
+	public String toString() {
+		return "Model [SerialNo=" + SerialNo + ", brand=" + brand + ", Category=" + Category + ", name=" + name + "]";
+	}
 	public void setSerialNo(int serialNo) {
 		SerialNo = serialNo;
-	}
-	public String getName() {
-		return Name;
-	}
-	public void setName(String name) {
-		Name = name;
 	}
 	public String getBrand() {
 		return brand;
@@ -30,9 +28,10 @@ public class Model {
 	public void setCategory(String category) {
 		Category = category;
 	}
-	
-	
-	
-	
-
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 }
