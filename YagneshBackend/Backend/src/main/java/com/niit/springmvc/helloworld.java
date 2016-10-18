@@ -1,5 +1,6 @@
 package com.niit.springmvc;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -56,4 +57,14 @@ public class helloworld {
 		view.setViewName("viewall");
 		return view;
 	}
+	@RequestMapping(value={"/viewall/{pro}"})
+    public ModelAndView products(@PathVariable("pro") String st)
+	{
+		
+		ModelAndView view = new ModelAndView();
+		view.setViewName("viewall");
+		view.addObject("st", st);
+		return view;
+	}
+	
 }
