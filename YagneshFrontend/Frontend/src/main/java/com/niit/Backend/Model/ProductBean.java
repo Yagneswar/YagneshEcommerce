@@ -1,44 +1,22 @@
 package com.niit.Backend.Model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
-
 
 @Entity
-@Table(name="Model")
 public class ProductBean {
-     @Id
-     @Column(name="SerialNo")
-     @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int SerialNo;
-	private String brand;
-	private String Category;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String name;
-	public int getSerialNo() {
-		return SerialNo;
+	private int price;
+	public int getId() {
+		return id;
 	}
-	@Override
-	public String toString() {
-		return "Model [SerialNo=" + SerialNo + ", brand=" + brand + ", Category=" + Category + ", name=" + name + "]";
-	}
-	public void setSerialNo(int serialNo) {
-		SerialNo = serialNo;
-	}
-	public String getBrand() {
-		return brand;
-	}
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
-	public String getCategory() {
-		return Category;
-	}
-	public void setCategory(String category) {
-		Category = category;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -46,4 +24,15 @@ public class ProductBean {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "productmodel [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+
 }
