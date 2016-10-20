@@ -208,17 +208,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <br>
 <div class="container">
 
-	<div ng-app="myApp" ng-controller="namesCtrl">
+	<div ng-app="myApp" ng-controller="myCtrl">
 		<p>
 			 <input type="text" class="form-control " id="usr" ng-model="test">
 		</p>
 		<table class="table table-hover">
     <thead>
       <tr>
-       <th >SerialNo</th>
+                
+                <th ng-click="orderByMe('SerialNo')">SerialNo</th>
 				<th ng-click="orderByMe('name')">Name</th>
-				<th ng-click="orderByMe('country')">brand</th>
-				<th ng-click="orderByMe('country')">category</th>
+				<th ng-click="orderByMe('brand')">brand</th>
+				<th ng-click="orderByMe('Category')">Category</th>
 			</tr>
 			<tr ng-repeat="x in names | orderBy:myOrderBy | filter:test">
 				<td>{{x.SerialNo}}</td>

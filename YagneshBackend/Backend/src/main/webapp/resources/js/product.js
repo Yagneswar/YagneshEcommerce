@@ -1,5 +1,5 @@
 
-angular.module('myApp', []).controller('namesCtrl', function($scope) {
+/*angular.module('myApp', []).controller('namesCtrl', function($scope) {
     $scope.names = [
         {SerialNo:'1',name:'Rahul',brand:'Raymonds',category:'Matress'},
         {SerialNo:'2',name:'Deepak',brand:'Vanhussion',category:'Bedsheed'},
@@ -11,4 +11,14 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
     $scope.orderByMe = function(x) {
         $scope.myOrderBy = x;
     }
+});*/
+
+
+var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $http) {
+    $http.get("/Frontend/pro/all")
+    .then(function (response) {$scope.names = response.data;});
 });
+
+
+

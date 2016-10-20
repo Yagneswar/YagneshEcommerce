@@ -229,7 +229,7 @@ suits you</p>
 			</div>
 		</div>
 		<div class="footer-class w3-agile">
-		<p>© 2015 Mattress . All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+		<p>© 2016 Mattress . All Rights Reserved </a> </p>
 		</div>
 		</div>
 </body>

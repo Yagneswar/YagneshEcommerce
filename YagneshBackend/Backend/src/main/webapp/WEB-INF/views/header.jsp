@@ -14,15 +14,7 @@
 			</div>
 			<div class="header-left">
 			
-				<div class="search-box">
-					<div id="sb-search" class="sb-search">
-						<form action="#" method="post">
-							<input class="sb-search-input" placeholder="Enter your search term..." type="search"  id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"> </span>
-						</form>
-					</div>
-				</div>
+				
 			
 <!-- search-scripts -->
 					<script src="resources/js/classie.js"></script>
@@ -76,39 +68,7 @@
 									</ul>	
 								</div>							
 							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="products">Alpaca</a></li>
-										<li><a href="products">Cashmere</a></li>
-										<li><a href="products">Cotton</a></li>
-										<li><a href="products">Cotton Blend</a></li>
-										<li><a href="products">Down</a></li>
-										<li><a href="products">Down Alternative</a></li>
-										<li><a href="products">Egyptian Cotton</a></li>
-										<li><a href="products">Modal</a></li>
-										<li><a href="products">Pima Cotton</a></li>
-										<li><a href="products">Silk </a></li>
-										
-									</ul>	
-								</div>							
-							</div>
-							<div class="col1">
-								<div class="h_nav">
-									<ul>
-										<li><a href="products">Bedskirt</a></li>
-										<li><a href="products">Blanket/Throw</a></li>
-										<li><a href="products">Collection/Duvet</a></li>
-										<li><a href="products">Comforter</a></li>
-										<li><a href="products">Comforter Set</a></li>
-										<li><a href="products">Decorative Pillow</a></li>
-										<li><a href="products">Mattress Pad </a></li>
-										<li><a href="products">Mattress Topper</a></li>
-										<li><a href="products">Pillow</a></li>
-										<li><a href="products">Pillow Protector</a></li>
-									</ul>	
-								</div>												
-							</div>
+							
 						  </div>
 						</div>
 					</li>
@@ -172,6 +132,8 @@
 				<li><a class="color4" href="login">LOGIN</a></li>				
 				<li><a class="color6" href="contact">CONTACT</a></li>
 				<li><a class="color6" href="viewall">VIEW ALL</a></li>
+				<li><a class="color6" href="admin/product">ADMIN</a></li>
+				
 				
 			  </ul> 
 			</div>

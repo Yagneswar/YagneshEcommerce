@@ -2,11 +2,17 @@ package com.niit.Backend.DAO;
 
 import java.util.List;
 
-import com.niit.Backend.Model.ProductBean;
+import com.niit.Backend.Model.Product;
 
 public interface ProductDAO {
 
-	public void insertProduct(ProductBean p);
-	public List<ProductBean> listProducts();
+	List<Product> getAll();
+	
+   public void insert(Product p);
+	public void update(Product p);
+    public	void delete(int id);
+	
+   public Product getProduct(int id);
+	
 	
 }

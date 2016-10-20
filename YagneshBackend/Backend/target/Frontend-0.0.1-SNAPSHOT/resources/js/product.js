@@ -1,4 +1,4 @@
-
+/*
 angular.module('myApp', []).controller('namesCtrl', function($scope) {
     $scope.names = [
         {SerialNo:'1',name:'Rahul',brand:'Raymonds',category:'Matress'},
@@ -8,6 +8,18 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
         {SerialNo:'5',name:'Pravash',brand:'Handloom',category:'Bedsheedcover'},
         
         ];
+    $scope.orderByMe = function(x) {
+        $scope.myOrderBy = x;
+    }
+});
+*/
+
+angular.module('myApp', []);
+app.controller('myCtrl', function($scope, $http) {
+    $http.get("/Frontend/v/show")
+    .then(function(response) {
+        $scope.names = response.data;
+    });
     $scope.orderByMe = function(x) {
         $scope.myOrderBy = x;
     }
